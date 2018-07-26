@@ -1,0 +1,7 @@
+// Importing Bootstrap
+@import "node_modules/bootstrap/scss/_functions.scss";
+@import "node_modules/bootstrap/scss/_variables.scss";
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+// Imports for project scss components
+@import "mixins/util";

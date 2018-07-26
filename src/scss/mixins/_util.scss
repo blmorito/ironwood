@@ -1,0 +1,42 @@
+@mixin styles-for($breakpoint) {
+    @if $breakpoint == "mobile" {
+      @media (max-width: map-get($grid-breakpoints, "md") - 1) {
+        @content;
+      }
+    }
+    @else if $breakpoint == "not-mobile" {
+      @media (min-width: map-get($grid-breakpoints, "md") ) {
+        @content;
+      }
+    }
+    @else if $breakpoint == "xsmall" {
+      @media (min-width: 480px) {
+        @content;
+      }
+    }
+    @else if $breakpoint == "small" {
+      @media (min-width: 960px) {
+        @content;
+      }
+    }
+    @else if $breakpoint == "medium" {
+      @media (min-width: 1280px) {
+        @content;
+      }
+    }
+    @else if $breakpoint == "large" {
+      @media (min-width: 1600px) {
+        @content;
+      }
+    }
+    @else if $breakpoint == "not-mobile-portrait" {
+      @media (min-width: map-get($grid-breakpoints, "md") ) and (orientation : portrait) {
+        @content;
+      }
+    }    
+    @else if $breakpoint == "not-mobile-landscape" {
+      @media (min-width: map-get($grid-breakpoints, "md") ) and (orientation : landscape) {
+        @content;
+      }
+    }     
+  }

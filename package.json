@@ -1,0 +1,55 @@
+{
+  "name": "ironwood",
+  "version": "1.0.0",
+  "description": "simple boilerplate to start basic web projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "gulp serve",
+    "clean": "gulp clean",
+    "prod": "gulp build:prod",
+    "dev": "npm run clean && npm run serve",
+    "build-prod": "npm run clean && npm run prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blmorito/ironwood.git"
+  },
+  "keywords": [
+    "simple",
+    "bootstrap",
+    "boilerplate",
+    "starter",
+    "starterkit",
+    "gulp",
+    "npm",
+    "node",
+    "beginner",
+    "easy",
+    "jumpstart",
+    "quick"
+  ],
+  "author": "Brylle Lyndon Orito",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "bootstrap": "^4.1.2",
+    "browser-sync": "^2.24.5",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-filelist": "^1.0.2",
+    "gulp-html-extend": "^1.1.6",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-util": "^3.0.8",
+    "jquery": "^3.3.1"
+  },
+  "bugs": {
+    "url": "https://github.com/blmorito/ironwood/issues"
+  },
+  "homepage": "https://github.com/blmorito/ironwood#readme"
+}
