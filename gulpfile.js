@@ -9,6 +9,8 @@ const babel = require('gulp-babel')
 const reload = browserSync.reload
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
+const cleancss = require('gulp-clean-css');
+const uglify = require('gulp-uglify');
 
 const buildFolder = 'site';
 const npmPath = "./node_modules";
@@ -162,6 +164,7 @@ gulp.task('build:prod:scripts', () => gulp
         presets: ['env']
     }))
     .pipe(concat('main.js'))
+    .pipe(uglify())
     .pipe(gulp.dest(`${buildFolder}/js`))
     .pipe(reload({
         stream: true
@@ -178,6 +181,7 @@ gulp.task('build:prod:styles', () => gulp
     .pipe(autoprefixer({
         browsers: ['last 2 versions']
     }))
+    .pipe(cleancss())
     .pipe(gulp.dest(`${buildFolder}/css`))
     .pipe(reload({
         stream: true
