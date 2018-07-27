@@ -14,7 +14,7 @@ const buildFolder = 'site';
 const npmPath = "./node_modules";
 
 gulp.task('build:scripts', () => gulp
-    .src('./src/**/*.js')
+    .src('./src/js/**/*.js')
     .pipe(sourcemaps.init())
     .pipe(babel({
         presets: ['env']
@@ -157,7 +157,7 @@ gulp.task('serve', ['build'], () => {
  * For Production (Remove sourcemaps + minify)
  **********************/
 gulp.task('build:prod:scripts', () => gulp
-    .src('./src/**/*.js')
+    .src('./src/js/**/*.js')
     .pipe(babel({
         presets: ['env']
     }))
