@@ -39,7 +39,7 @@ All features mentioned above are already set up and integrated to the gulp tasks
 2. To start the local server and start developing, run `npm run dev` in the terminal.
 3. To build site for production (which means no more sourcemapps and minifiying all css and js files), run `npm run build-prod`
 
-## Addding additional js/css libraries
+## Adding additional js/css libraries
 
 To add additional libraries, make sure they are installed through npm (or bower/yarn) and then add their paths in the src of `copy:plugins:js` and `copy:plugins:css` gulp tasks (or you can also import the sass src of the library in `styles.scss`). 
 Update your imports in the `<head></head>` in the html accordingly.
