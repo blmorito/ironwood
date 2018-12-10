@@ -37,7 +37,6 @@ All features mentioned above are already set up and integrated to the gulp tasks
 ## How to use
 1. Make sure you run `npm install` to install project dependencies.
 2. To start the local server and start developing, run `npm run dev` in the terminal.
-3. To build site for production (which means no more sourcemapps and minifiying all css and js files), run `npm run build-prod`
 
 ## Adding additional js/css libraries
 
